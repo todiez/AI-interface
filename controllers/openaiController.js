@@ -24,7 +24,6 @@ const generateMeta = async (title) => {
     ],
     max_tokens: 100,
   });
-
   console.log(tags.data.choices[0].message);
 };
 
@@ -36,7 +35,6 @@ const generateImage = async(desc) => {
     n: 1,
     size: "1024x1024",
   });
-
   console.log(image.data.data[0].url);
 }
 
